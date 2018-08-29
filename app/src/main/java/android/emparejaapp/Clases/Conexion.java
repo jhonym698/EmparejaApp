@@ -17,6 +17,7 @@ public class Conexion extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("create table opcionJuego(tiempo text)");
+        //HELLO
 
         db.execSQL("create table puntuacion(id INTEGER PRIMARY KEY AUTOINCREMENT, nombre text, puntaje INTEGER, tiempo text )");
 
